@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Atkinson-Hyperlegible';
+  src: url('../fonts/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2'), url('../fonts/WOFF/Atkinson-Hyperlegible-Regular-102.woff') format('woff'), url('../fonts/TTF/Atkinson-Hyperlegible-Regular-102.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Atkinson-Hyperlegible';
+  src: url('../fonts/WOFF2/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2'), url('../fonts/WOFF/Atkinson-Hyperlegible-Bold-102.woff') format('woff'), url('../fonts/TTF/Atkinson-Hyperlegible-Bold-102.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Atkinson-Hyperlegible';
+  src: url('../fonts/WOFF2/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2'), url('../fonts/WOFF/Atkinson-Hyperlegible-Italic-102.woff') format('woff'), url('../fonts/TTF/Atkinson-Hyperlegible-Italic-102.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Atkinson-Hyperlegible';
+  src: url('../fonts/WOFF2/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2'), url('../fonts/WOFF/Atkinson-Hyperlegible-BoldItalic-102.woff') format('woff'), url('../fonts/TTF/Atkinson-Hyperlegible-BoldItalic-102.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold mb-2;
+  }
+
+  h2 {
+    @apply text-2xl font-bold mb-1;
+  }
+
+  h3 {
+    @apply text-xl font-bold mb-1;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  form.small-form {
+    @apply bg-gray-200 m-1 p-2;
+  }
+
+  form.small-form label {
+    @apply block;
+  }
+
+  form.small-form input:not([type=submit]) {
+    @apply block w-full border border-gray-400 p-1 rounded;
+  }
+
+  .button {
+    @apply my-1 px-3 py-1 rounded;
+  }
+
+  form.small-form input[type=submit] {
+    @apply button block bg-green-400;
+  }
+
+  .story-box {
+    @apply border rounded p-1 m-1 bg-gray-100;
+  }
+
+  .story-box h2 {
+    @apply text-yellow-800;
+  }
+
+  .story-box ul {
+    @apply text-yellow-700 ml-2 text-lg;
+  }
+}
